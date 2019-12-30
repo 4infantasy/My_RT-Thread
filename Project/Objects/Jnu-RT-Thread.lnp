@@ -1,0 +1,17 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\cpuport.o"
+".\objects\context_rvds.o"
+".\objects\thread.o"
+".\objects\scheduler.o"
+".\objects\object.o"
+".\objects\kservice.o"
+".\objects\idle.o"
+".\objects\clock.o"
+".\objects\irq.o"
+".\objects\startup_armcm3.o"
+".\objects\system_armcm3.o"
+--strict --scatter ".\Objects\Jnu-RT-Thread.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Jnu-RT-Thread.map" -o .\Objects\Jnu-RT-Thread.axf
